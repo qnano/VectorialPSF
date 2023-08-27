@@ -25,7 +25,7 @@ Explore the capabilities of the Vectorial PSF tool and unlock valuable insights 
 
 1. **Customize Zernike Aberrations and Investigate PSF Effects**
 
-  Select optical Zernike aberrations and study their impact on the Point Spread Function (PSF) and its influence on the Cramer-Rao Lower Bound (CRLB). 
+   Select optical Zernike aberrations and study their impact on the Point Spread Function (PSF) and its influence on the Cramer-Rao Lower Bound (CRLB). 
 
    [View Slideshow](https://imgur.com/a/0HlrptA)
 
@@ -45,17 +45,31 @@ Explore the capabilities of the Vectorial PSF tool and unlock valuable insights 
 
 ## Getting Started
 
-Guide users through setting up and using your project. Provide step-by-step instructions and examples.
-
 ### Prerequisites
 
-List any dependencies or prerequisites users need to have installed before using your project.
+This system has been tested on Ubuntu 22.04. The main requirements are Python >3.8 and PyTorch (tested on PyTorch 2.0.1 and CUDA 11.8). A CUDA compatible driver is recommended for faster calculations, but a CPU version should work as well.
 
 ### Installation
 
-Provide detailed installation instructions. You can include commands for cloning the repository, installing dependencies, etc.
+Follow these steps to get started:
 
-```shell
-git clone https://github.com/yourusername/your-project.git
-cd your-project
-npm install
+1. **Clone the Repository:**
+   ```shell
+   git clone https://github.com/pvanvelde/VectorialPSF.git
+   cd VectorialPSF
+ 
+2. **Create and Activate a New Conda Virtual Environment:**
+   ```shell
+   conda create --name vectorial_psf_env python=3.10
+   conda activate vectorial_psf_env
+
+3. **Install Dependencies:**
+   ```shell
+   pip install -r requirements.txt
+
+4. **Run the Application:**
+   ```shell
+   python GUI.py
+   
+
+
