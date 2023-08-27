@@ -11,10 +11,8 @@ Vectorial PSF is a tool designed to facilitate the fitting of aberrations in you
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Usage](#usage)
-- [Configuration](#configuration)
-- [Contributing](#contributing)
 - [License](#license)
-- [Acknowledgements](#acknowledgements)
+
 
 ## Introduction
 We utilize a vector PSF model to address axial localization errors arising from model mismatches in commonly used Gaussian point spread functions (PSFs). This model incorporates super-critical angle fluorescence and an aplanatic correction factor, providing insights into accurate 3D emitter localization.
@@ -23,24 +21,25 @@ We utilize a vector PSF model to address axial localization errors arising from 
 
 Explore the capabilities of the Vectorial PSF tool and unlock valuable insights into your optical system:
 
-1. **Customize Zernike Aberrations and Investigate PSF Effects**
+1. **Choose Zernike Aberrations and Investigate PSF Effects**
 
    Select optical Zernike aberrations and study their impact on the Point Spread Function (PSF) and its influence on the Cramer-Rao Lower Bound (CRLB). 
 
-   [View Slideshow](https://imgur.com/a/0HlrptA)
+   ![Image 1](images/demo/main.png)
+   ![Image 2](images/demo/showpsf.png)
+   ![Image 3](images/demo/crlb.png)
+
 
 2. **Accurate Aberration Determination Using Through-Focus Scans**
 
    Utilize a through-focus scan of fluorescent beads to identify aberrations within your system.
+   ![Image 4](images/demo/aberrationfit.png)
 
-   ![Through-Focus Scan](https://imgur.com/a/WzoDf6G)
 
 3. **Spot Fitting from SMLM Data**
 
    Load candidate emitters from Single-Molecule Localization Microscopy (SMLM) data and fit spots. Save the results in HDF5 files, ready for further in-depth analysis using Picasso (https://github.com/jungmannlab/picasso).
-
-   ![Spot Fitting](https://imgur.com/a/qTn27H8)
-
+  ![Image 4](images/demo/fit_emit.png)
 
 
 ## Getting Started
@@ -70,6 +69,26 @@ Follow these steps to get started:
 4. **Run the Application:**
    ```shell
    python GUI.py
-   
+### Usage
 
+1. **Parameter Configuration:**
+   Fill in all the parameters on the main screen. You can save or load these parameters for later use. If applicable, you can also select aberrations (for aberration fitting it is not necessary at this stage).
+
+2. **Choose Actions:**
+   Press the blue button to choose from the following actions:
+   - 'View PSF': Visualize the Point Spread Function (PSF) and the Cramer-Rao Lower Bound (CRLB) corresponding to the input parameters.
+   - 'Load Through-Focus Image of Beads (Z-Stack)': Example data is available in '/examples/Example Aberration Fit':
+     - Ensure 'z_stack' is checked on the input screen.
+     - Select an initial guess for the aberrations.
+     - Load the through-focus scan with a file extension of .tif(f).
+     - The shape of the image should be: [number of beads, number of z-slices, ROI size, ROI size].
+   - 'Fit Emitters': Example data is available in '/examples/Example SMLM':
+     - Ensure the correct aberrations are loaded.
+     - Open candidate emitters saved in .tif(f): [number of spots, ROI size, ROI size].
+     - Open a .txt file containing the positions of the ROIs in the image, formatted as: [frame, row (upper left), column (upper left)], with a number of rows equal to the number of spots.
+     - Choose a .hdf5 file to save the results.
+
+## License
+
+This project is licensed under the MIT License. You can find a copy of the license in the [LICENSE](LICENSE) file.
 
