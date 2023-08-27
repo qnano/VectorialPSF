@@ -23,25 +23,23 @@ Explore the capabilities of the Vectorial PSF tool and unlock valuable insights 
 
 1. **Choose Zernike Aberrations and Investigate PSF Effects**
 
-   Select optical Zernike aberrations and study their impact on the Point Spread Function (PSF) and its influence on the Cramer-Rao Lower Bound (CRLB). 
+   Select optical Zernike aberrations and study their impact on the Point Spread Function (PSF) and its influence on the Cramer-Rao Lower Bound (CRLB).
 
-   ![Image 1](images/demo/main.png)
-   ![Image 2](images/demo/showpsf.png)
-   ![Image 3](images/demo/crlb.png)
-
+   <img src="images/demo/main.png" alt="Main Screen" width="200">
+   <img src="images/demo/showpsf.png" alt="View PSF" width="200">
+   <img src="images/demo/crlb.png" alt="CRLB" width="200">
 
 2. **Accurate Aberration Determination Using Through-Focus Scans**
 
-   Utilize a through-focus scan of fluorescent beads to identify aberrations within your system.
-   ![Image 4](images/demo/aberrationfit.png)
+   Utilize a through-focus scan of fluorescent beads to identify aberrations within your system. 
 
+   <img src="images/demo/aberrationfit.png" alt="Through-Focus Scan" width="200">
 
 3. **Spot Fitting from SMLM Data**
 
-   Load candidate emitters from Single-Molecule Localization Microscopy (SMLM) data and fit spots. Save the results in HDF5 files, ready for further in-depth analysis using Picasso (https://github.com/jungmannlab/picasso).
-  ![Image 4](images/demo/fit_emit.png)
+   Load candidate emitters from Single-Molecule Localization Microscopy (SMLM) data and fit spots. Save the results in HDF5 files, ready for further in-depth analysis using Picasso (https://github.com/jungmannlab/picasso). 
 
-
+   <img src="images/demo/fit_emit.png" alt="Spot Fitting" width="200">
 ## Getting Started
 
 ### Prerequisites
