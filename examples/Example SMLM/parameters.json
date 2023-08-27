@@ -1,0 +1,23 @@
+{
+    "Max Iterations for Fit [int]": 30,
+    "Tolerance [float]": 1e-06,
+    "Device ['cuda' or 'cpu']": "cuda",
+    "NA [float]": 1.49,
+    "Refractive index medium [float]": 1.51,
+    "Refractive index coverglass [float]": 1.51,
+    "Refractive index immersion oil [float]": 1.51,
+    "Free working distance obj. (nm) [float]": 120000,
+    "min z-Range of bead stack (nm) [float]": -300.0,
+    "max z-Range of bead stack (nm) [float]": 300,
+    "min z-spread of estimator (nm) [float]": -500.0,
+    "max z-spread of estimator (nm) [float]": 500,
+    "emission wavelength (nm) [float]": 710,
+    "Pupil size in pixels [even int]": 52,
+    "Pixel Size in image plane (nm) [float]": 65,
+    "Roisize in pixels [even int]": 16,
+    "Number of Zernike aberrations to fit/use \n (start from Noll index=5) [int]": 12,
+    "Batch size for fitting [int] (to prevent memory issues)": 20000,
+    "Damping factor LM algorithm [float]": 0.001,
+    "Width image (only relevant for SMLM) [int]": 256,
+    "Height image (only relevant for SMLM) [int]": 256
+}
