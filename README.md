@@ -15,7 +15,7 @@ Vectorial PSF is a tool designed to facilitate the fitting of aberrations in you
 
 
 ## Introduction
-We utilize a vector PSF model to address axial localization errors arising from model mismatches, providing insights into accurate 3D emitter localization.
+We utilize a vector Point Spread Function (PSF) model to address axial localization errors arising from model mismatches, providing insights into accurate 3D emitter localization.
 
 ## Features
 
